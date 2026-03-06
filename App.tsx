@@ -1,9 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import IntroSection from './components/IntroSection';
-import QuestionsAnswersSection from './components/QuestionsAnswersSection';
 import Footer from './components/Footer';
 import AboutView from './components/views/AboutView';
 
@@ -26,7 +23,7 @@ const App: React.FC = () => {
   };
 
   // Determine if the current page has a dark background to adjust Navbar color
-  const isDarkPage = currentPage === 'about';
+  const isDarkPage = true;
 
   return (
     <div className="relative min-h-screen selection:bg-black selection:text-white">
@@ -50,9 +47,7 @@ const App: React.FC = () => {
       <div className={`transition-opacity duration-500 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
         {currentPage === 'home' && (
           <main>
-            <Hero />
-            <IntroSection />
-            <QuestionsAnswersSection />
+            <AboutView />
           </main>
         )}
 
