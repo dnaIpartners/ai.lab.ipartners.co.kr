@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import AboutView from './components/views/AboutView';
 
@@ -22,9 +21,6 @@ const App: React.FC = () => {
     }, 600);
   };
 
-  // Determine if the current page has a dark background to adjust Navbar color
-  const isDarkPage = true;
-
   return (
     <div className="relative min-h-screen selection:bg-black selection:text-white">
       {/* Page Transition Overlay */}
@@ -41,8 +37,6 @@ const App: React.FC = () => {
           <rect width="100" height="100" filter="url(#noise)" />
         </svg>
       </div>
-
-      <Navbar onNavigate={navigateTo} isDark={isDarkPage} />
       
       <div className={`transition-opacity duration-500 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
         {currentPage === 'home' && (
