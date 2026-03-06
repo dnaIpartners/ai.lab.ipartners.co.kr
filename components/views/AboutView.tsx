@@ -59,7 +59,7 @@ const AboutView: React.FC = () => {
       <section className="py-32 md:py-48 bg-black/40 backdrop-blur-md relative z-10">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="max-w-5xl">
-            <h3 className="text-sm font-bold tracking-[0.2em] text-[#00A3FF] uppercase mb-12">Our Mission</h3>
+            <h3 className="font-archivo text-sm font-bold tracking-[0.2em] text-[#00A3FF] uppercase mb-12">Our Mission</h3>
             <h2 ref={textRef} className="text-[22px] md:text-[43px] lg:text-[64px] font-bold mb-12 leading-[1.3] tracking-tight break-keep text-gray-400"> 
               <span>
                 {text1.split('').map((char, i) => {
@@ -86,8 +86,8 @@ const AboutView: React.FC = () => {
       <section className="bg-black/60 backdrop-blur-md text-white relative z-10 py-32">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="mb-24 text-center md:text-left">
-            <h3 className="text-sm font-bold tracking-[0.2em] text-[#0033FF] uppercase mb-4">Our Vision</h3>
-            <h2 className="text-5xl md:text-7xl font-black tracking-tighter text-white mb-6">
+            <h3 className="font-archivo text-sm font-bold tracking-[0.2em] text-[#0033FF] uppercase mb-4">Our Vision</h3>
+            <h2 className="font-archivo text-5xl md:text-7xl font-black tracking-tighter text-white mb-6">
               From <span className="text-gray-500">Web Agency</span> to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00A3FF] to-[#0033FF]">AI Partner</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl break-keep font-light">
@@ -107,7 +107,7 @@ const AboutView: React.FC = () => {
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-gray-600"></div>
               <div className="relative z-10">
-                <div className="text-gray-500 font-mono text-sm mb-4 tracking-widest">DX : DIGITAL TRANSFORMATION</div>
+                <div className="text-gray-500 font-archivo text-sm mb-4 tracking-widest">DX : DIGITAL TRANSFORMATION</div>
                 <h3 className="text-3xl font-bold mb-6 text-gray-300">구축 중심의 에이전시</h3>
                 <p className="text-gray-400 mb-10 leading-relaxed font-light break-keep h-24">
                   오프라인 비즈니스를 온라인으로 옮기고, 사용자가 접근하기 쉬운 플랫폼을 만드는 인프라 중심의 디지털 전환 단계입니다.
@@ -146,7 +146,7 @@ const AboutView: React.FC = () => {
                 whileHover={{ scale: 1.1 }}
                 className="relative z-20 w-20 h-20 rounded-full bg-black border border-[#0033FF]/50 flex items-center justify-center shadow-[0_0_30px_rgba(0,51,255,0.2)] backdrop-blur-md"
               >
-                <span className="font-black text-xl text-transparent bg-clip-text bg-gradient-to-br from-[#00A3FF] to-[#0033FF]">i-PIE</span>
+                <span className="font-archivo font-black text-xl text-transparent bg-clip-text bg-gradient-to-br from-[#00A3FF] to-[#0033FF]">i-PIE</span>
               </motion.div>
             </div>
 
@@ -167,7 +167,7 @@ const AboutView: React.FC = () => {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0033FF] to-[#00A3FF]"></div>
               
               <div className="relative z-10">
-                <div className="text-[#00A3FF] font-mono text-sm mb-4 tracking-widest flex items-center gap-2">
+                <div className="text-[#00A3FF] font-archivo text-sm mb-4 tracking-widest flex items-center gap-2">
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00A3FF] opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00A3FF]"></span>
@@ -236,13 +236,13 @@ const AboutView: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h2 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter text-white mb-8">
+            <h2 className="font-archivo text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter text-white mb-8">
               Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00A3FF] to-[#0033FF]">i-PIE??</span>
             </h2>
             <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
               아이파트너즈와 함께 새로운 디지털 경험을 만들어갈 준비가 되셨나요?
             </p>
-            <button className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold tracking-wide hover:bg-[#0033FF] hover:text-white transition-colors duration-300 group">
+            <button className="font-archivo inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold tracking-wide hover:bg-[#0033FF] hover:text-white transition-colors duration-300 group">
               IPARTNERS CO.
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>

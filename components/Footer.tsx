@@ -13,7 +13,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Left Section */}
         <div className="mb-12 md:mb-0">
           <h2 
-            className="text-2xl font-black tracking-tighter mb-6 cursor-pointer hover:text-blue-500 transition-colors"
+            className="font-archivo text-2xl font-black tracking-tighter mb-6 cursor-pointer hover:text-blue-500 transition-colors"
             onClick={() => onNavigate('home')}
           >
             IPARTNERS
@@ -26,7 +26,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         {/* Right Section */}
-        <div className="grid grid-cols-2 gap-x-16 gap-y-3 text-gray-400 font-bold tracking-widest uppercase">
+        <div className="font-archivo grid grid-cols-2 gap-x-16 gap-y-3 text-gray-400 font-bold tracking-widest uppercase">
           <button onClick={() => onNavigate('about')} className="text-left hover:text-white transition-colors">ABOUT</button>
           <a href="#" className="text-left hover:text-white transition-colors">Facebook</a>
           <button onClick={() => onNavigate('works')} className="text-left hover:text-white transition-colors">WORK</button>
@@ -38,7 +38,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-24 pt-6 border-t border-white/10 flex justify-between items-center text-[10px] text-gray-600 font-bold tracking-widest uppercase">
+      <div className="font-archivo max-w-7xl mx-auto mt-24 pt-6 border-t border-white/10 flex justify-between items-center text-[10px] text-gray-600 font-bold tracking-widest uppercase">
         <p>© 2026 IPARTNERS ALL RIGHTS RESERVED.</p>
         <div className="flex gap-4">
           <a href="#" className="hover:text-white transition-colors">개인정보처리방침</a>
