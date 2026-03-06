@@ -1,0 +1,8 @@
+{
+  "name": "ai.lab.ipartners.co.kr",
+  "description": "A high-end, minimalist digital agency website redesign featuring interactive case studies, expertise sections, and a Gemini-powered AI consulting assistant.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
