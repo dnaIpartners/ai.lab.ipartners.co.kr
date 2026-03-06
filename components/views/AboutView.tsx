@@ -237,13 +237,13 @@ const AboutView: React.FC = () => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <h2 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter text-white mb-8">
-              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00A3FF] to-[#0033FF]">Innovate?</span>
+              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00A3FF] to-[#0033FF]">i-PIE??</span>
             </h2>
             <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
-              아이파트너즈와 함께 새로운 디지털 경험을 만들어갈 준비가 되셨나요? <br className="hidden md:block" />지금 바로 문의해주세요.
+              아이파트너즈와 함께 새로운 디지털 경험을 만들어갈 준비가 되셨나요?
             </p>
             <button className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold tracking-wide hover:bg-[#0033FF] hover:text-white transition-colors duration-300 group">
-              CONTACT US
+              IPARTNERS CO.
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
