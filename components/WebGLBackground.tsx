@@ -138,8 +138,21 @@ function ParticleSphere() {
   useFrame((state) => {
     if (!pointsRef.current || !materialRef.current) return;
     
+    const elapsedTime = state.clock.getElapsedTime();
+    
+    // Initial scale animation
+    const animationDuration = 3.0; // 3.0 seconds to grow (20% slower)
+    const progress = Math.min(elapsedTime / animationDuration, 1.0);
+    
+    // Easing function (easeOutQuart)
+    const easeProgress = 1 - Math.pow(1 - progress, 4);
+    
+    // Start from 0.01 and grow to baseScale
+    const currentScale = 0.01 + (baseScale - 0.01) * easeProgress;
+    pointsRef.current.scale.set(currentScale, currentScale, currentScale);
+
     // Update time
-    materialRef.current.uniforms.uTime.value = state.clock.getElapsedTime();
+    materialRef.current.uniforms.uTime.value = elapsedTime;
 
     // Calculate scroll progress (0 to 1)
     const scrollY = window.scrollY;
@@ -184,7 +197,7 @@ function ParticleSphere() {
 
   return (
     <Float speed={1.5} rotationIntensity={0.5} floatIntensity={1}>
-      <points ref={pointsRef} geometry={geometry} scale={baseScale}>
+      <points ref={pointsRef} geometry={geometry}>
         <shaderMaterial
           ref={materialRef}
           vertexShader={vertexShader}

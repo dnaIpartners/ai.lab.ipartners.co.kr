@@ -38,19 +38,37 @@ const AboutView: React.FC = () => {
         {/* Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col justify-center h-full">
           <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  delayChildren: 2.0,
+                  staggerChildren: 0.4
+                }
+              }
+            }}
             className="max-w-5xl"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.2] mb-8 text-white break-keep">
-              AI는 사람을 대신하는 것이 아니라,<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0033FF] to-[#00A3FF]">역량을 한 단계 위로</span><br />
-              끌어올리는 것입니다.
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.2] mb-8 text-white break-keep flex flex-col gap-2 md:gap-4">
+              <motion.span variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } } }}>
+                AI는 사람을 대신하는 것이 아니라,
+              </motion.span>
+              <motion.span variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } } }}>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0033FF] to-[#00A3FF]">역량을 한 단계 위로</span>
+              </motion.span>
+              <motion.span variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } } }}>
+                끌어올리는 것입니다.
+              </motion.span>
             </h1>
-            <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 font-medium tracking-tight max-w-3xl break-keep leading-relaxed">
+            <motion.p 
+              variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } } }}
+              className="text-xl md:text-2xl lg:text-3xl text-gray-300 font-medium tracking-tight max-w-3xl break-keep leading-relaxed"
+            >
               1년차가 5년차의 시야를 갖고, 5년차가 10년차의 깊이를 갖습니다.
-            </p>
+            </motion.p>
           </motion.div>
         </div>
       </section>
@@ -206,12 +224,12 @@ const AboutView: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-24 pt-16 border-t border-white/10"
           >
-            <h4 className="text-2xl font-bold mb-10 text-center">아이파트너즈의 핵심 AX 서비스</h4>
+            <h4 className="text-2xl font-bold mb-10 text-center">아이파트너즈의 핵심 i-PIE 서비스</h4>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {[
                 { title: 'AI Service Planning', desc: '비즈니스 목표에 맞춘 AI 서비스 기획 및 도입 컨설팅' },
-                { title: 'Intelligent Platform', desc: 'LLM 및 AI 에이전트가 결합된 지능형 웹/앱 플랫폼 구축' },
-                { title: 'AI Design System', desc: '데이터 기반으로 최적화되는 동적 AI 디자인 시스템 설계' },
+                { title: 'AI Agents Platform', desc: 'AI 에이전트가 결합된 웹/앱 플랫폼 구축 프로세스' },
+                { title: 'AI UI/UX Design System', desc: '데이터 기반으로 최적화되는 AI 디자인 시스템 설계' },
                 { title: 'Workflow Automation', desc: '내부 업무 효율을 극대화하는 AI 기반 자동화 워크플로우' }
               ].map((service, i) => (
                 <div key={i} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-[#0033FF]/50 transition-all duration-300 cursor-pointer group flex flex-col h-full">
