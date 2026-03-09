@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutView from './components/views/AboutView';
 
@@ -23,6 +24,8 @@ const App: React.FC = () => {
 
   return (
     <div className="relative min-h-screen selection:bg-black selection:text-white">
+      <Header onNavigate={navigateTo} />
+      
       {/* Page Transition Overlay */}
       <div 
         className={`fixed inset-0 bg-black z-[100] transition-transform duration-700 ease-in-out ${isTransitioning ? 'translate-y-0' : 'translate-y-full'}`}
@@ -39,15 +42,11 @@ const App: React.FC = () => {
       </div>
       
       <div className={`transition-opacity duration-500 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
-        {currentPage === 'home' && (
+     
           <main>
             <AboutView />
           </main>
-        )}
-
-        {currentPage === 'about' && (
-          <AboutView />
-        )}
+     
       </div>
 
       <Footer onNavigate={navigateTo} />

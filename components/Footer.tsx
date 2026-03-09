@@ -13,10 +13,10 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Left Section */}
         <div className="mb-12 md:mb-0">
           <h2 
-            className="font-archivo text-2xl font-black tracking-tighter mb-6 cursor-pointer hover:text-blue-500 transition-colors"
+            className="font-archivo text-2xl font-black tracking-tighter mb-6 cursor-pointer hover:text-blue-500 transition-colors flex items-center"
             onClick={() => onNavigate('home')}
           >
-            IPARTNERS
+            IP<span className="inline-block" style={{ transform: 'rotate(180deg) translateY(-10%)' }}>V</span>RTNERS
           </h2>
           <div className="text-gray-500 space-y-1 leading-relaxed">
             <p>서울특별시 강남구 학동로 3길 10 (논현동) 아이타워</p>

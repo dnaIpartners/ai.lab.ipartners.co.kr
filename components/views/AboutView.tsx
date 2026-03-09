@@ -126,7 +126,7 @@ const AboutView: React.FC = () => {
               <div className="absolute top-0 left-0 w-full h-1 bg-gray-600"></div>
               <div className="relative z-10">
                 <div className="text-gray-500 font-archivo text-sm mb-4 tracking-widest">DX : DIGITAL TRANSFORMATION</div>
-                <h3 className="text-3xl font-bold mb-6 text-gray-300">구축 중심의 에이전시</h3>
+                <h3 className="text-2xl font-bold mb-6 text-gray-300">구축 중심의 에이전시</h3>
                 <p className="text-gray-400 mb-10 leading-relaxed font-light break-keep h-24">
                   오프라인 비즈니스를 온라인으로 옮기고, 사용자가 접근하기 쉬운 플랫폼을 만드는 인프라 중심의 디지털 전환 단계입니다.
                 </p>
@@ -192,7 +192,7 @@ const AboutView: React.FC = () => {
                   </span>
                   AX : AI TRANSFORMATION
                 </div>
-                <h3 className="text-3xl font-bold mb-6 text-white">지능형 경험 에이전시</h3>
+                <h3 className="text-2xl font-bold mb-6 text-white">지능형 경험 에이전시</h3>
                 <p className="text-gray-300 mb-10 leading-relaxed font-light break-keep h-24">
                   AI가 스스로 데이터를 분석하고 콘텐츠를 생성하며, 사용자에게 초개인화된 예측형 디지털 경험을 제공하는 지능형 전환 단계입니다.
                 </p>
