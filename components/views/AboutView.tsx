@@ -36,7 +36,7 @@ const AboutView: React.FC = () => {
       {/* --- HERO SECTION --- */}
       <section className="relative z-10 min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col justify-center h-full">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col justify-center items-center h-full text-center">
           <motion.div 
             initial="hidden"
             animate="visible"
@@ -50,9 +50,9 @@ const AboutView: React.FC = () => {
                 }
               }
             }}
-            className="max-w-5xl"
+            className="max-w-5xl flex flex-col items-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.2] mb-8 text-white break-keep flex flex-col gap-2 md:gap-4">
+            <h1 className="text-[40px] md:text-[60px] lg:text-[88px] font-bold tracking-tight leading-[1.2] mb-8 text-white break-keep flex flex-col items-center gap-2 md:gap-4">
               <motion.span variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } } }}>
                 AI는 사람을 대신하는 것이 아니라,
               </motion.span>
@@ -65,7 +65,7 @@ const AboutView: React.FC = () => {
             </h1>
             <motion.p 
               variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } } }}
-              className="text-xl md:text-2xl lg:text-3xl text-gray-300 font-medium tracking-tight max-w-3xl break-keep leading-relaxed"
+              className="text-xl md:text-2xl lg:text-3xl text-gray-300 font-medium tracking-tight max-w-3xl break-keep leading-relaxed text-center mx-auto"
             >
               1년차가 5년차의 시야를 갖고, 5년차가 10년차의 깊이를 갖습니다.
             </motion.p>
