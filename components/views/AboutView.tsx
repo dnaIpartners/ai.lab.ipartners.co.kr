@@ -50,7 +50,7 @@ const AboutView: React.FC = () => {
                 }
               }
             }}
-            className="w-full max-w-[700px] flex flex-col items-center"
+            className="w-full max-w-[1200px] flex flex-col items-center"
           >
             <h1 className="text-[40px] md:text-[60px] lg:text-[88px] font-bold tracking-tight leading-[1.2] mb-8 text-white break-keep flex flex-col items-center gap-2 md:gap-4 w-full">
               <motion.span variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } } }}>
