@@ -78,7 +78,7 @@ const AboutView: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="max-w-5xl">
             <h3 className="font-archivo text-sm font-bold tracking-[0.2em] text-[#00A3FF] uppercase mb-12">Our Mission</h3>
-            <h2 ref={textRef} className="text-[22px] md:text-[43px] lg:text-[64px] font-bold mb-12 leading-[1.3] tracking-tight break-keep text-gray-400"> 
+            <h2 ref={textRef} className="text-[22px] md:text-[43px] lg:text-[56px] font-bold mb-12 leading-[1.3] tracking-tight break-keep text-gray-400"> 
               <span>
                 {text1.split('').map((char, i) => {
                   const start = i / totalChars;
@@ -93,7 +93,7 @@ const AboutView: React.FC = () => {
                 return <AnimatedChar key={i} char={char} progress={scrollYProgress} range={[start, end]} />;
               })}
             </h2>
-            <p className="text-lg md:text-xl text-gray-400 max-w-7xl break-keep leading-relaxed font-light">        
+            <p className="text-[20px] text-gray-400 max-w-7xl break-keep leading-relaxed font-light">        
              지능형 워크플로우 안에서는 실무진의 경력 한계가 사라집니다. 주니어 컨설턴트는 AI의 방대한 데이터 분석력을 활용해 단숨에 시니어급의 거시적인 프로젝트 시야를 확보합니다. 소모적인 반복 작업에서 해방된 시니어 컨설턴트는 고객사의 비즈니스 맥락을 깊이 있게 해석하고 차별화된 전략 수립에 온전히 집중하여, 실질적인 비즈니스 성과와 프로젝트 업무 품질의 비약적인 향상을 이끌어냅니다.
             </p>
           </div>
